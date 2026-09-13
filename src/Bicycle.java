@@ -4,20 +4,14 @@ public class Bicycle {
     private String brakes;
     private String chainring;
 
-    // Конструктор доступен только внутри пакета (для Builder)
-    Bicycle(String frame, String groupset, String brakes, String chainring) {
-        this.frame = frame;
-        this.groupset = groupset;
-        this.brakes = brakes;
-        this.chainring = chainring;
-    }
+    public void setFrame(String frame) { this.frame = frame; }
+    public void setGroupset(String groupset) { this.groupset = groupset; }
+    public void setBrakes(String brakes) { this.brakes = brakes; }
+    public void setChainring(String chainring) { this.chainring = chainring; }
 
     @Override
     public String toString() {
-        return "Bicycle Configuration: " +
-                "Frame = '" + frame + '\'' +
-                ", Groupset = '" + groupset + '\'' +
-                ", Brakes = '" + brakes + '\'' +
-                ", Chainring = '" + chainring + '\'';
+        return String.format("Bicycle [Frame = %s, Groupset = %s, Brakes = %s, Chainring = %s]",
+                frame, groupset, brakes, chainring);
     }
 }

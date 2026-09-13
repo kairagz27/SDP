@@ -1,18 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         BicycleDirector director = new BicycleDirector();
-        BicycleBuilder builder = new BicycleBuilder();
 
-        // Сборка гравийного велосипеда
-        director.constructGravelBike(builder);
-        Bicycle gravelBike = builder.build();
+        BicycleBuilder gravelBuilder = new GravelBikeBuilder();
+        Bicycle gravelBike = director.constructBike(gravelBuilder);
         System.out.println(gravelBike);
 
-        // Кастомная ручная сборка (без директора)
-        Bicycle customBike = new BicycleBuilder()
-                .setFrame("54cm Track Frame")
-                .setChainring("48T")
-                .build();
-        System.out.println(customBike);
+        BicycleBuilder urbanBuilder = new UrbanBikeBuilder();
+        Bicycle urbanBike = director.constructBike(urbanBuilder);
+        System.out.println(urbanBike);
     }
 }
