@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Assignment2_SDP.iml" filepath="$PROJECT_DIR$/Assignment2_SDP.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/BicycleBuilder.iml" filepath="$PROJECT_DIR$/BicycleBuilder.iml" />
+>>>>>>> ca1e61c63e8802a5a3a33c03e8a4482401f26db8
     </modules>
   </component>
 </project>
