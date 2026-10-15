@@ -1,0 +1,23 @@
+PASS 1: Premium booking updates all subsystem state
+PASS 2: Basic service has its own price and duration
+PASS 3: Two bays accept simultaneous bookings
+PASS 4: Full schedule rejects without extra charges
+PASS 5: Partial time overlap is rejected
+PASS 6: Adjacent time slots are accepted
+PASS 7: Insufficient chemicals release the reserved bay
+PASS 8: Declined payment restores chemicals and bay
+PASS 9: Storage failure refunds payment and restores resources
+PASS 10: Cancellation refunds and restores all resources
+PASS 11: Repeated cancellation cannot refund twice
+PASS 12: Unknown booking does not change state
+PASS 13: Unknown service leaves state unchanged
+PASS 14: Blank customer is rejected
+PASS 15: Blank service is rejected
+PASS 16: Null time is rejected
+PASS 17: Null request is rejected
+PASS 18: Service names are normalized
+PASS 19: Resources released twice are restored only once
+PASS 20: Subsystem constructors reject invalid state
+PASS 21: A later success is possible after a failed payment
+PASS 22: Zero stock rejects even a basic service
+ALL 22 TESTS PASSED

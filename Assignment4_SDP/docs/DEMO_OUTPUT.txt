@@ -1,0 +1,6 @@
+Booked PREMIUM | Bay 1 | 2099-10-18T10:00 to 2099-10-18T11:00 | 6000.00 KZT
+Booked BASIC | Bay 2 | 2099-10-18T10:00 to 2099-10-18T10:30 | 3000.00 KZT
+Expected failure: Cannot book wash for Agzam: No wash bay is available at 2099-10-18T10:00
+First booking cancelled and payment refunded.
+Expected failure: Cannot book wash for LowBalance: Insufficient balance for LowBalance
+Booked PREMIUM | Bay 1 | 2099-10-18T10:00 to 2099-10-18T11:00 | 6000.00 KZT
