@@ -10,7 +10,7 @@ This project uses one Facade to book a car wash through five subsystem classes. 
 
 ## Run in IntelliJ IDEA
 
-1. Extract the ZIP and open the `Assignment4_Facade` folder as a project.
+1. Open the `Assignment4_SDP` folder as a project in IntelliJ IDEA.
 2. Set Project SDK and language level to **Java 17** or a newer JDK that supports Java 17.
 3. Mark `src/main/java` as **Sources Root** and `src/test/java` as **Test Sources Root** if IntelliJ has not detected them.
 4. Run `kz.agzam.carwash.client.Main` to see the Facade demo.
@@ -131,7 +131,7 @@ Covered behavior includes successful BASIC/PREMIUM bookings, simultaneous bookin
 
 Local verification used OpenJDK 17.0.20 on Linux. The PowerShell launcher and GitHub Actions workflow are provided but were not executed in this environment.
 
-See `docs/TEST_RESULTS.txt` for the captured local run and `docs/DEMO_OUTPUT.txt` for the demo output. The storage failure is injected by a test-only repository subclass; the normal demo does not have a special failure flag.
+The storage failure is injected by a test-only repository subclass; the normal demo does not have a special failure flag.
 
 ## Requirement mapping
 
@@ -147,7 +147,6 @@ See `docs/TEST_RESULTS.txt` for the captured local run and `docs/DEMO_OUTPUT.txt
 | At least five justified Clean Code principles | Eight principles documented above |
 | Complete compiling source | All `.java` files in `src`; runnable shell and PowerShell scripts |
 | GitHub repository | Upload this project to a GitHub repository and submit its URL; see below |
-| Paper-based defense | `docs/DEFENSE.md` has simple English answers, code tracing and practice tasks |
 | Topic unique in group and absent from lecture | Must be checked against classmates and Lecture 6 before submission |
 
 ## GitHub submission
