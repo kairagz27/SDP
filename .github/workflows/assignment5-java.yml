@@ -1,0 +1,26 @@
+name: Assignment 5 Java verification
+on:
+  push:
+    paths:
+      - 'Assignment5_SDP/**'
+      - '.github/workflows/assignment5-java.yml'
+  pull_request:
+    paths:
+      - 'Assignment5_SDP/**'
+      - '.github/workflows/assignment5-java.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Assignment5_SDP
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Compile and run behavioral tests
+        run: bash run.sh test
+      - name: Run Strategy demonstration
+        run: bash run.sh demo
